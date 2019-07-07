@@ -11,9 +11,11 @@
   ],
 
   "provisioners": [
-    {
-      "type": "shell",
-      "script": "setup_things.sh"
-    }
+{
+  "type": "shell",
+  "inline": ["echo foo",
+             "echo \"packer ami\""
+]
+}
   ]
 }
